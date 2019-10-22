@@ -1,13 +1,21 @@
 <template>
   <div class="home">
-    <h1>This is an home page</h1>
+    <carousel class="carousel"/>
   </div>
 </template>
 
 <script>
+  import Carousel from "@/components/carousel/Carousel"
   export default {
     name: 'home',
     components: {
+      Carousel
     }
   }
 </script>
+
+<style scoped>
+  .carousel {
+    margin-top: 10px;
+  }
+</style>
